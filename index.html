@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uruguay Nutri - Suplementos & Performance</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #0b0f19; color: #f4f7f6; margin: 0; padding: 0; }
+        header { background-color: #05070b; color: white; text-align: center; padding: 2.5rem 1rem; border-bottom: 3px solid #009ee3; }
+        .logo-container { margin-bottom: 1rem; }
+        .logo-container img { max-width: 130px; height: auto; border-radius: 50%; border: 2px solid #009ee3; }
+        header h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; color: #009ee3; font-weight: bold; }
+        header p { margin: 0; font-size: 1.1rem; color: #a3e4d7; text-transform: uppercase; letter-spacing: 1px; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+        .card { background: #131b2e; border: 1px solid #1f293d; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; }
+        .product-img { width: 100%; height: 160px; object-fit: contain; margin-bottom: 1rem; background: #0b0f19; border-radius: 6px; padding: 5px; }
+        .card h3 { color: #ffffff; margin-bottom: 0.5rem; font-size: 1.3rem; }
+        .badge { background: #009ee3; color: #ffffff; font-size: 0.8rem; padding: 0.3rem 0.6rem; border-radius: 4px; display: inline-block; margin-bottom: 1rem; font-weight: bold; }
+        .desc { font-size: 0.9rem; color: #b0c4de; margin-bottom: 1rem; flex-grow: 1; }
+        .price { font-size: 1.4rem; font-weight: bold; color: #2ecc71; margin: 1rem 0; }
+        .btn { display: inline-block; background: #009ee3; color: white; padding: 0.75rem 1rem; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: #007eb5; }
+        
+        /* Secção de Confiança */
+        .trust-section { background: #131b2e; border: 1px solid #1f293d; margin-top: 3rem; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: center; }
+        .trust-item h4 { color: #009ee3; margin-bottom: 0.3rem; }
+        .trust-item p { font-size: 0.9rem; color: #b0c4de; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Lugar para o Logótipo -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Uruguay Nutri Logo">
+        </div>
+        <h1>URUGUAY NUTRI</h1>
+        <p>Suplementos & Performance</p>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #ffffff;">Elegí tu suplemento</h2>
+        
+        <div class="grid">
+            <!-- Produto 1: Comdor -->
+            <div class="card">
+                <div>
+                    <img src="comdor.webp" alt="Comdor Nattubras" class="product-img">
+                    <h3>Comdor (Cúrcuma + Colágeno II)</h3>
+                    <span class="badge">60 Cápsulas • 700 mg</span>
+                    <p class="desc">Extracto de cúrcuma, colágeno tipo II y vitaminas C, K2 y D3. Auxilia en el funcionamiento articular y absorción de calcio[cite: 2].</p>
+                </div>
+                <div>
+                    <div class="price">$U 699</div>
+                    <a href="https://mpago.la/1dvurAP" class="btn">Comprar en Mercado Pago</a>
+                </div>
+            </div>
+
+            <!-- Produto 2: Creatina -->
+            <div class="card">
+                <div>
+                    <img src="creatina.png" alt="Creatina Monohidratada" class="product-img">
+                    <h3>Creatina Monohidratada</h3>
+                    <span class="badge">300g • 0% Sodio</span>
+                    <p class="desc">Suplemento alimentario en polvo 99,99% pura. Sin sabor, sin aditivos artificiales y testeada en laboratorio[cite: 1].</p>
+                </div>
+                <div>
+                    <div class="price">$U 490</div>
+                    <a href="https://mpago.la/1nPMTCu" class="btn">Comprar en Mercado Pago</a>
+                </div>
+            </div>
+
+            <!-- Produto 3: Tri Magnésio -->
+            <div class="card">
+                <div>
+                    <img src="magnesio.jpg" alt="Tri Magnésio" class="product-img">
+                    <h3>Tri Magnesio</h3>
+                    <span class="badge">120 Cápsulas • 600 mg</span>
+                    <p class="desc">Fórmula avanzada combinando Magnesio Dimalato, Quelato y Citrato para máxima absorción y energía muscular[cite: 3].</p>
+                </div>
+                <div>
+                    <div class="price">$U 579</div>
+                    <a href="https://mpago.la/21jdEZV" class="btn">Comprar en Mercado Pago</a>
+                </div>
+            </div>
+
+            <!-- Produto 4: Ômega 3 -->
+            <div class="card">
+                <div>
+                    <img src="omega.webp" alt="Omega 3" class="product-img">
+                    <h3>Omega 3 (Aceite de Pescado)</h3>
+                    <span class="badge">60 Cápsulas • Rico en EPA/DHA</span>
+                    <p class="desc">Fuente de omega 3 de alta pureza, libre de metales pesados, esencial para la salud cardiovascular[cite: 4].</p>
+                </div>
+                <div>
+                    <div class="price">$U 349</div>
+                    <a href="https://mpago.la/2hVWGSb" class="btn">Comprar en Mercado Pago</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secção de Confiança -->
+        <div class="trust-section">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; color: #ffffff;">¿Por qué comprar con nosotros?</h3>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h4>🔒 Pago 100% Seguro</h4>
+                    <p>Procesado con total seguridad a través de Mercado Pago en Uruguay.</p>
+                </div>
+                <div class="trust-item">
+                    <h4>📦 Envíos Rápidos</h4>
+                    <p>Enviamos con rapidez y seguridad a todo el territorio uruguayo.</p>
+                </div>
+                <div class="trust-item">
+                    <h4>💬 Soporte Dedicado</h4>
+                    <p>Acompañamos tu pedido y respondemos tus dudas directamente por chat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
